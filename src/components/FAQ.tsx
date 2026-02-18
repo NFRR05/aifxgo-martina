@@ -120,6 +120,26 @@ export const FAQ = () => {
             <p className="mt-8 text-[10px] text-slate-500 uppercase tracking-widest font-semibold">
               {t.faq.finalCta.note}
             </p>
+
+            <div className="mt-8 flex items-center justify-center gap-4 bg-slate-800/50 p-4 rounded-2xl w-fit mx-auto border border-slate-700/50 backdrop-blur-sm">
+              <div className="relative">
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-amber-500">
+                  <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80"
+                    alt="Luca B."
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-slate-900"></div>
+              </div>
+              <div className="text-left">
+                <div className="flex items-center gap-2">
+                  <p className="font-bold text-white text-sm">{t.faq.finalCta.expert.name}</p>
+                  <span className="bg-slate-700 text-slate-300 text-[10px] px-2 py-0.5 rounded-full border border-slate-600 font-medium">{t.faq.finalCta.expert.role}</span>
+                </div>
+                <p className="text-slate-400 text-xs mt-0.5 max-w-[200px] leading-tight">"{t.faq.finalCta.expert.text}"</p>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>

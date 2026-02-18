@@ -154,7 +154,12 @@ export const translations = {
                 title: "Inizia a fare trading in modo più intelligente.",
                 desc: "7.000 persone l'hanno già fatto. I loro risultati parlano da soli. Ora il tuo turno.",
                 button: "Inizia Gratuitamente",
-                note: "Nessuna carta di credito. Nessun impegno. Vedi se è giusto per te."
+                note: "Nessuna carta di credito. Nessun impegno. Vedi se è giusto per te.",
+                expert: {
+                    name: "Luca B.",
+                    role: "Expert",
+                    text: "Ti guideremo passo dopo passo nel tuo percorso di trading."
+                }
             }
         },
         footer: {
@@ -334,7 +339,12 @@ export const translations = {
                 title: "Start trading smarter.",
                 desc: "7,000 people have already done it. Their results speak for themselves. Now it's your turn.",
                 button: "Start For Free",
-                note: "No credit card. No commitment. See if it's right for you."
+                note: "No credit card. No commitment. See if it's right for you.",
+                expert: {
+                    name: "Luca B.",
+                    role: "Expert",
+                    text: "We will guide you step by step in your trading journey."
+                }
             }
         },
         footer: {
@@ -514,7 +524,12 @@ export const translations = {
                 title: "Empieza a hacer trading de manera más inteligente.",
                 desc: "7.000 personas ya lo han hecho. Sus resultados hablan por sí mismos. Ahora es tu turno.",
                 button: "Empieza Gratis",
-                note: "Sin tarjeta de crédito. Sin compromiso. Mira si es adecuado para ti."
+                note: "Sin tarjeta de crédito. Sin compromiso. Mira si es adecuado para ti.",
+                expert: {
+                    name: "Luca B.",
+                    role: "Expert",
+                    text: "Te guiaremos paso a paso en tu camino de trading."
+                }
             }
         },
         footer: {
