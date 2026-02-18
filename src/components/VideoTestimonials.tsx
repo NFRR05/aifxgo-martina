@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { Play, Send } from 'lucide-react';
+import { Play, Send, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export const VideoTestimonials = () => {
@@ -37,6 +37,18 @@ export const VideoTestimonials = () => {
       text: t.reviews.items[3].text
     }
   ];
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const { current } = scrollRef;
+      const scrollAmount = 340; // Card width + gap
+      if (direction === 'left') {
+        current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      } else {
+        current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }
+  };
 
   const checkScroll = () => {
     // Scroll state markers not used in current UI
@@ -109,6 +121,24 @@ export const VideoTestimonials = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          {/* Scroll Controls */}
+          <div className="flex justify-center items-center gap-4 mt-6">
+            <button
+              onClick={() => scroll('left')}
+              className="p-3 rounded-full bg-white border border-slate-200 shadow-md hover:shadow-lg text-slate-600 hover:text-amber-500 transition-all duration-200 hover:-translate-y-0.5"
+              aria-label="Previous testimonial"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            <button
+              onClick={() => scroll('right')}
+              className="p-3 rounded-full bg-white border border-slate-200 shadow-md hover:shadow-lg text-slate-600 hover:text-amber-500 transition-all duration-200 hover:-translate-y-0.5"
+              aria-label="Next testimonial"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
           </div>
 
           {/* CTA Button */}
